@@ -14,7 +14,9 @@
                     <a class="nav-link active me-4" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{ route('welcome') }}">
                     <button type="button" class="btn btn-success me-4">Back</button>
+                    </a>
                 </li>
             </ul>
         </div>

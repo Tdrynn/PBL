@@ -46,85 +46,180 @@
 
     {{-- About Section --}}
     <div class="row">
-        <section id="about" class="HomePage2 text-white py-5 d-flex align-items-center justify-content-center">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-6 d-flex justify-content-center position-relative">
-                        <div class="shadow-box"></div>
-                        <img src="{{ Vite::asset('resources/images/CP1.png') }}" alt="Foto"
-                            class="imgPg2 rounded-4 shadow-lg">
+        <section id="about" class="HomePage2 text-white py-5 d-flex align-items-center justify-content-center"
+            style="min-height: 100vh;">
+            <div class="container position-relative">
+
+                <div class="row align-items-center justify-content-center">
+                    <!-- Kolom kiri: Judul dan Gambar -->
+                    <div class="col-lg-6 col-md-6 position-relative text-start mb-5 mb-md-0">
+
+                        <!-- Judul di kiri atas -->
+                        <h3 class="fw-bold position-absolute"
+                            style="top: -40px; left: -20px; letter-spacing: 1px; font-size: 22px;">
+                            ABOUT US
+                        </h3>
+
+                        <!-- Card gambar + shadow -->
+                        <div class="d-flex justify-content-start position-relative"
+                            style="max-width: 420px; margin-top: 30px;">
+                            <!-- Card bayangan di kiri atas -->
+                            <div class="shadow-box position-absolute rounded-4"
+                                style="background-color: rgba(0, 0, 0, 0.9); width: 95%; height: 95%; top: -25px; left: -25px; border-radius: 20px; z-index: 1; box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);">
+                            </div>
+
+                            <!-- Gambar utama -->
+                            <img src="{{ Vite::asset('resources/images/CP1.png') }}" alt="Foto"
+                                class="rounded-4 shadow-lg position-relative"
+                                style="width: 100%; height: auto; border-radius: 20px; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.4);">
+                        </div>
                     </div>
-                    <div class="col-md-6 ps-md-5 mt-4 mt-mt-0 align-items-centerx">
-                        <h3 class="fw-bold text-start">ABOUT US</h3>
-                        <h1 class="fw-bold">WHO ARE WE?</h1>
-                        <p>Located in edging clear river in Klungkung regency, Angklung River Camp offers a
-                            tranquil camping
+
+                    <!-- Kolom kanan: Deskripsi -->
+                    <div class="col-lg-6 col-md-6 ps-md-5">
+                        <h1 class="fw-bold mb-3">WHO ARE WE?</h1>
+                        <p class="mb-3" style="max-width: 550px;">
+                            Located in edging clear river in Klungkung regency, Angklung River Camp offers a tranquil
+                            camping
                             experience perfectly at one with nature. Perfect for families, groups, and organizations.
                         </p>
                         <p class="mb-4">Go check it, by clicking find out more button below</p>
-                        <a href="{{ '#' }}" class="btn btn-dark d-flex align-items-center gap-2 px-4 py-2 mb-3"
+
+                        <!-- Tombol -->
+                        <a href="{{ '#' }}" class="btn d-flex align-items-center justify-content-center gap-2"
                             style="background-color: #1F2922; color: #FFFFFF; border-radius: 64px; height: 60px; width: 250px; font-size: 20px;">
-                            <span class="fw-bold mx-auto">FIND OUT MORE</span>
-                            <img src="{{ Vite::asset('resources/images/Search.png') }}" alt="Search" width="30" height="30">
+                            <span class="fw-bold">FIND OUT MORE</span>
+                            <img src="{{ Vite::asset('resources/images/Search.png') }}" alt="Search" width="28" height="28">
                         </a>
                     </div>
-
                 </div>
             </div>
         </section>
     </div>
 
-    {{-- Gallery Section --}}
+{{-- Gallery Section --}}
     <div class="row">
-        <section id="gallery" class="HomePage3  text-white">
-            <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+        <section id="gallery" class="HomePage3 py-5 text-white">
+            <div class="container text-center align-items-center justify-content-center">
+                <h1 class="fw-bold mb-4 mt-3">OUR GALLERY</h1>
+
+                <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-inner" width="500" height="500">
+
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <div class="card bg-transparent border-0 shadow-lg rounded-4" style="max-width:900px;">
+                                    <img src="{{ Vite::asset('resources/images/GalleryT.png') }}"
+                                        class="img-fluid rounded-4" style="width:100%; height:500px; object-fit:cover;"
+                                        alt="Gallery 1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="card bg-transparent border-0 shadow-lg rounded-4" style="max-width:900px;">
+                                    <img src="{{ Vite::asset('resources/images/GalleryKa.png') }}"
+                                        class="img-fluid rounded-4" style="width:100%; height:500px; object-fit:cover;"
+                                        alt="Gallery 2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="card bg-transparent border-0 shadow-lg rounded-4" style="max-width:900px;">
+                                    <img src="{{ Vite::asset('resources/images/GalleryKi.png') }}"
+                                        class="img-fluid rounded-4" style="width:100%; height:500px; object-fit:cover;"
+                                        alt="Gallery 3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="card bg-transparent border-0 shadow-lg rounded-4" style="max-width:900px;">
+                                    <img src="{{ Vite::asset('resources/images/PN1.png') }}"
+                                        class="img-fluid rounded-4" style="width:100%; height:500px; object-fit:cover;"
+                                        alt="Gallery 3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="card bg-transparent border-0 shadow-lg rounded-4" style="max-width:900px;">
+                                    <img src="{{ Vite::asset('resources/images/PN5.png') }}"
+                                        class="img-fluid rounded-4" style="width:100%; height:500px; object-fit:cover;"
+                                        alt="Gallery 3">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="carousel-inner img-fluid" style="width: 50vw; height: 40vh; border: solid;">
-                        <div class="carousel-item active img-fluid">
-                            <img src="{{ Vite::asset('resources/images/GalleryT.png') }}" class="d-block w-100" style="width: 50vw; height: 40vh" alt="Foto">
-                        </div>
-                        <div class="carousel-item img-fluid">
-                            <img src="{{ Vite::asset('resources/images/GalleryKa.png') }}" class="d-block w-100" alt="Foto">
-                        </div>
-                        <div class="carousel-item img-fluid">
-                            <img src="{{ Vite::asset('resources/images/GalleryKi.png') }}" class="d-block w-100" alt="Foto">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-light rounded-circle p-3 bg-dark" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel"
                         data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-light rounded-circle p-3 bg-dark" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-            <div class="d-flex justify-content-center">
-                <h1 class="fw-bold">OUR GALLERY</h1>
             </div>
         </section>
     </div>
 
     {{-- Reviews Section --}}
     <div class="row">
-        <section id="reviews" class="HomePage4  text-white d-flex align-items-center object-fit-cover">
-
+        <section id="reviews" class="HomePage4 text-white d-flex align-items-center justify-content-center flex-column container">
+            <h1 class="fw-bold text-center mb-5 mt-0">Reviews of Our Visitors</h1>
+            <div class="row align-items-center gap-3">
+                <div class="col justify-content-center" style="width: 400px; height: auto;">
+                    <a href="" class="text-decoration-none text-white align-items-center">
+                        <h1 class="fw-bold text-center" style="font-size: 100px;">4,4</h1>
+                        <h1 class="fw-bold text-center"style="font-size: 60px;">★★★★★</h1>
+                        <h5 class="text-center">Based on 70 Review</h5>
+                    </a>
+                </div>
+                <div class="col" style="width: 400px; height: auto; background: rgba(8, 6, 6, 0.3); backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); padding: 20px; border-radius: 20px;">
+                    <a href="" class="text-decoration-none text-white align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="{{ Vite::asset('resources/images/Logo.png') }}" alt="Foto" width="50" height="50">
+                            <h1>Andika JP</h1>
+                        </div>
+                        <h4>4,4 ★★★★★</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo vero autem deleniti explicabo repellendus facilis placeat accusantium, nesciunt deserunt delectus, doloremque cum. Dolore odit dolor repellendus, aperiam a tempore natus?</p>
+                    </a>
+                </div>
+                <div class="col" style="width: 400px; height: auto; background: rgba(8, 6, 6, 0.3); backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); padding: 20px; border-radius: 20px;">
+                    <a href="" class="text-decoration-none text-white align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="{{ Vite::asset('resources/images/Logo.png') }}" alt="Foto" width="50" height="50">
+                            <h1>Andika JP</h1>
+                        </div>
+                        <h4>4,4 ★★★★★</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo vero autem deleniti explicabo repellendus facilis placeat accusantium, nesciunt deserunt delectus, doloremque cum. Dolore odit dolor repellendus, aperiam a tempore natus?</p>
+                    </a>
+                </div>
+            </div>
         </section>
     </div>
 
-    {{-- More Informations Section --}}
     <div class="row">
-        <section id="moreinfo" class="HomePage5">
-
+        <section id="moreinfo" class="HomePage5 align-items-center justify-content-center">
+            @include('layouts.footer')
         </section>
-        @include('layouts.footer')
+    </div>
+
 @endsection

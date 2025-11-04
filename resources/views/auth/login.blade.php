@@ -1,6 +1,7 @@
 @extends('layouts.auth')
 
 @section('content')
+    @include('layouts.navbar.navbar_back')
     <div class="row">
         <div class="vh-100 text-white d-flex align-items-center justify-content-center HomePage1 object-fit-cover">
             <div class="login-card text-center text-black">
@@ -10,20 +11,20 @@
                 <form>
                     <div class="form-container mx-auto">
                         <div class="mb-3 text-start">
-                            <label for="email" class="form-label fw-semibold">Email</label>
-                            <input type="email" name="email" id="email" required class="form-control custom-input">
+                            <label for="email" class="form-label fw-semibold mb-0">Email</label>
+                            <input type="email" name="email" id="email" required class="form-control custom-input" placeholder="Enter your full name">
                         </div>
 
                         <div class="mb-3 text-start">
-                            <label for="password" class="form-label fw-semibold">Password</label>
-                            <input type="password" name="password" id="password" required class="form-control custom-input">
+                            <label for="password" class="form-label fw-semibold mb-0">Password</label>
+                            <input type="password" name="password" id="password" required class="form-control custom-input" placeholder="Enter your password">
                         </div>
 
-                        <button type="submit" class="btn btn-success btn-green w-100 my-3">Log In</button>
+                        <button type="submit" class="btn btn-success btn-green w-100 my-2">Log In</button>
                     </div>
                     
-                    <div class="text-center my-3">
-                        <p>Don't have an account? <a href="{{ ('#') }}" class="text-primary">Create account</a></p>
+                    <div class="text-center mt-1">
+                        <p>Don't have an account? <a href="{{ route('register') }}" class="text-primary">Create account</a></p>
                     </div>
                 </form>
                 </div>
