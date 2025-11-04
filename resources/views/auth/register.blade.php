@@ -7,6 +7,7 @@
             <div class="login-card text-center text-black">
                 <img src="{{ Vite::asset('resources/images/LogoCLR.png') }}" alt="Logo" width="60">
                 <h4 class="" style="font-weight: 700;">Create a new account</h4>
+                <p style="font-size: 14px; color: #555;">Your amazing camping will begin here</p>
 
                 {{-- FORM REGISTER --}}
                 <form method="POST" action="{{ route('register') }}">
