@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('layouts.navbar.navbar_main')
+    @include('layouts.navbar.navbar_login')
 
     {{-- Home Section --}}
     <div class="row">

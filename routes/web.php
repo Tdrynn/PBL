@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
+
 Route::get('/login', function () {
     return view('auth.login'); // perhatikan: gunakan "auth.login" dengan titik
 })->name('login');
@@ -12,3 +13,27 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('auth.register');
 })->name('register');
+
+Route::get('/home', function () {
+    return view('user.home');
+})->name('home');
+
+Route::get('/package', function () {
+    return view('user.package');
+})->name('package');
+
+Route::get('/profile', function () {
+    return view('user.profile');
+})->name('profile');
+
+Route::get('/history', function() {
+    return view('user.history');
+})->name('history');
+
+Route::get('/changeprofile', function() {
+    return view('user.change_profile');
+})->name('changeprofile');
+
+Route::get('/changepassword', function() {
+    return view('user.change_password');
+})->name('changepassword');
