@@ -5,7 +5,7 @@
 
     {{-- Home Section --}}
     <div class="row">
-        <section id="home" class="text-white d-flex align-items-center HomePage1 img-fluid">
+        <section id="home" class="text-white d-flex align-items-center HomePage1">
             <div class="ms-5 w-50">
                 <h1 style="font-size: 110px; font-weight: 660; color: #FFFFFF;">Angklung River Camp</h1>
                 <p style="font-size: 29px;">Angklung River Camp is a serene riverside camping site in Klungkung, Bali,

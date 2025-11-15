@@ -37,3 +37,19 @@ Route::get('/changeprofile', function() {
 Route::get('/changepassword', function() {
     return view('user.change_password');
 })->name('changepassword');
+
+Route::get('/picnic', function() {
+    return view('user.picnic');
+})->name('picnic');
+
+Route::get('/camping', function() {
+    return view('user.camping');
+})->name('camping');
+
+Route::get('/camperVan', function() {
+    return view('user.camperVan');
+})->name('camperVan');
+
+Route::get('/groupEvent', function() {
+    return view('user.groupEvent');
+})->name('groupEvent');

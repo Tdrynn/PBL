@@ -78,7 +78,7 @@
                         <h1 class="m-0">History</h1>
                     </div>
 
-                    <div class="container d-flex flex-column align-items-center gap-3 text-light text-center p2" style="max-height: 450px; overflow-y: auto;">
+                    <div class="container d-flex flex-column align-items-center gap-3 text-light text-center p2" style="max-height: 425px; overflow-y: auto;">
                         <div class="row bg-warning rounded-3" style="width: 95%;">
                             <div class="col">
                                 <p class="mb-0 mt-2">Up coming</p>
