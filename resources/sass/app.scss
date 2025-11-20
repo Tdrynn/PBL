@@ -39,7 +39,7 @@
 }
 
 .HomePage5 {
-    background-color:  #1E1F1E;
+    background-color: #1E1F1E;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +72,24 @@
 .learnMore {
     background: url('../images/learnMore.png') center/cover no-repeat;
     background-color: #84AE92;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Booking {
+    background: url('../images/Booking.png') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Payment {
+    background: url('../images/payment.png') center/cover no-repeat;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -137,9 +155,9 @@
 }
 
 .carousel-item img {
-  height: 80vh;
-  width: auto;
-  object-fit: cover;
+    height: 80vh;
+    width: auto;
+    object-fit: cover;
 }
 
 .nav-link.active {
@@ -149,3 +167,31 @@
     transition: all 0.2s ease-in-out;
 }
 
+.step-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #2f472f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 350;
+    margin: auto;
+}
+
+.step-active {
+    background-color: #2f472f;
+    color: #fff;
+}
+
+.addon-input {
+    width: 80px !important;
+    height: 35px !important;
+    flex-shrink: 0;
+}
+
+.addon-label {
+    width: 110px;
+    min-height: 45px;
+    margin: 0;
+}

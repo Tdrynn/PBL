@@ -53,3 +53,35 @@ Route::get('/camperVan', function() {
 Route::get('/groupEvent', function() {
     return view('user.groupEvent');
 })->name('groupEvent');
+
+Route::get('/bookingPicnic', function() {
+    return view('user.booking_picnic');
+})->name('bookingPicnic');
+
+Route::get('/bookingCamping', function() {
+    return view('user.booking_camping');
+})->name('bookingCamping');
+
+Route::get('/bookingCampervan', function() {
+    return view('user.booking_campervan');
+})->name('bookingCampervan');
+
+Route::get('/bookingGroupEvent', function() {
+    return view('user.booking_groupEvent');
+})->name('bookingGroupEvent');
+
+Route::get('/payment', function() {
+    return view('user.payment');
+})->name('payment');
+
+Route::get('/paymentQris', function() {
+    return view('user.payment_qris');
+})->name('paymentQris');
+
+Route::get('/paymentVirtualAccount', function() {
+    return view('user.payment_virtualAccount');
+})->name('paymentVirtualAccount');
+
+Route::get('/invoice', function() {
+    return view('user.invoice');
+})->name('invoice');

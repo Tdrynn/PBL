@@ -4,7 +4,7 @@
     @include('layouts.navbar.navbar_package')
 
     <div class="row">
-        <div id="Campervan" class="text-light learnMore py-4">
+        <div class="text-light learnMore py-4">
             <div class="container-fluid px-0 my-1 mt-2 mb-4">
                 <h1 class="text-center fw-bold">Campervan</h1>
 
